@@ -1,0 +1,25 @@
+<html lang="ru">
+   <head>
+      <title>Задание_7</title>
+      <script type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body onload="new_session();">
+      <div id="game" class="main">
+         <canvas id="canvas" width="900" height="600" onclick="shoot();"  onmousemove="rotate(event)"></canvas>
+      </div>
+      <div id="info" class="main">
+         <table>
+            <div id="top"></div>
+         </table>
+      </div>
+      <div class="btns">
+         <input type="button" id="кнопка1" class="btn" value="Играть" onclick="change_status();">
+         <input type="button" id="кнопка2" class="btn" value="Заново" onclick="init();">
+         <input type="button" id="кнопка3" class="btn" value="Сменить игрока" onclick="new_session();">
+         <input type="button" id="кнопка4" class="btn" value="Таблица" onclick="change_section();">
+      </div>
+   </body>
+</html>
